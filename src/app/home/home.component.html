@@ -1,1 +1,8 @@
-<p>home works!</p>
+<div class="main-container">
+    <app-mention (submitEvent)="receiveContent($event)"></app-mention>
+    <div class="messages-container">
+        <ng-container *ngFor="let content of contents">
+            <app-message [message]="content"></app-message>
+        </ng-container>
+    </div>
+</div>

@@ -13,6 +13,10 @@ import { AboutUsComponent } from './about-us/about-us.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { HttpClient, HttpClientModule, HttpHandler } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
+import { MentionComponent } from './components/mention/mention.component';
+import { QuillModule, QUILL_CONFIG_TOKEN } from 'ngx-quill';
+import { MessageComponent } from './components/message/message.component'
+// import { MatQuillModule } from './mat-quill/mat-quill-module';
 
 @NgModule({
   declarations: [
@@ -22,15 +26,21 @@ import { FormsModule } from '@angular/forms';
     LoginComponent,
     HomeComponent,
     AboutUsComponent,
-    GalleryComponent
+    GalleryComponent,
+    MentionComponent,
+    MessageComponent
   ],
+  entryComponents: [MentionComponent],
+  exports: [MentionComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     AngularMaterialModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    QuillModule.forRoot(),
+    // MatQuillModule
   ],
   providers: [
     HttpClient

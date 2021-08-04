@@ -47,6 +47,17 @@ export class AuthService {
     })
   }
 
+  getAllUsers(): Promise<{ id: number, value: string }[]> {
+    return this.http.get<User[]>('/assets/user.json').toPromise()
+      .then(users => {
+        const userNames: any = [];
+        users.map((user, index) => {
+          userNames.push({ id: index + 1, value: user.username })
+        })
+        return userNames;
+      })
+  }
+
   logout() {
     this.isAuthenticated = false;
     this.authStatusListener.next({ isLoggedIn: false, userName: '' });
