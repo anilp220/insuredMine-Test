@@ -1,1 +1,11 @@
-<p>gallery works!</p>
+<div class="image-container">
+    <mat-card *ngFor="let item of images;let i = index" class="image-card">
+        <mat-card-header>
+            <mat-card-title>{{item.title}}</mat-card-title>
+        </mat-card-header>
+        <img mat-card-image [src]="item.image" (click)="openImage(i)">
+    </mat-card>
+    <ng-image-fullscreen-view [animationSpeed]="0.5" [images]="images" [imageIndex]="selectedImageIndex"
+        [show]="showFlag" (close)="closeEventHandler()"></ng-image-fullscreen-view>
+
+</div>

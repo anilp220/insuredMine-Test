@@ -1,0 +1,19 @@
+.image-container {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  display: grid;
+  margin: 0 30px;
+}
+
+.image-card {
+  margin: 10px;
+  img {
+    cursor: pointer;
+  }
+  img:hover {
+    box-shadow: 0 0px 5px 1px;
+  }
+}
+
+.mat-card-header-text {
+  margin: 0;
+}

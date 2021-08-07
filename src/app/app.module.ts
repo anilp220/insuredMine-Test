@@ -16,7 +16,7 @@ import { FormsModule } from '@angular/forms';
 import { MentionComponent } from './components/mention/mention.component';
 import { QuillModule, QUILL_CONFIG_TOKEN } from 'ngx-quill';
 import { MessageComponent } from './components/message/message.component'
-// import { MatQuillModule } from './mat-quill/mat-quill-module';
+import { NgImageFullscreenViewModule } from 'ng-image-fullscreen-view';
 
 @NgModule({
   declarations: [
@@ -40,7 +40,7 @@ import { MessageComponent } from './components/message/message.component'
     HttpClientModule,
     FormsModule,
     QuillModule.forRoot(),
-    // MatQuillModule
+    NgImageFullscreenViewModule
   ],
   providers: [
     HttpClient
