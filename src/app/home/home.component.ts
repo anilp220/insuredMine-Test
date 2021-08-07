@@ -17,7 +17,6 @@ export class HomeComponent implements OnInit {
   }
 
   receiveContent(event: any) {
-    console.log(event)
     if (event)
       this.contents.push(event)
   }

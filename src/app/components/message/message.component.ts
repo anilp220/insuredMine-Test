@@ -12,7 +12,6 @@ export class MessageComponent implements OnInit {
   constructor(private authService: AuthService) { }
 
   ngOnInit(): void {
-    console.log(this.message)
   }
 
 }

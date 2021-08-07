@@ -1,0 +1,90 @@
+.svg-banner-desktop {
+  background: #4e2e88e6;
+  opacity: 0.95;
+  position: relative;
+  padding: 50px 0;
+}
+.svg-text-left.svg-text-full.text-center {
+  text-align: center;
+}
+.svg-text-left.svg-text-full {
+  max-width: 100%;
+}
+.svg-text-left {
+  line-height: 1.42857143;
+  color: #fff;
+  max-width: 667px;
+  padding-right: 15px;
+}
+.svg-banner-desktop .row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container {
+  // width: 1170px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.gray-box {
+  padding-top: 65px;
+  padding-bottom: 69px;
+  background: #f0f0f0;
+  text-align: center;
+}
+.ourClients {
+  padding: 30px 0;
+}
+.row {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+.ourClientsHD {
+  font-size: 20px;
+  font-weight: 700;
+  float: left;
+  width: 120px;
+  line-height: 50px;
+  margin: 2px 0;
+  display: inline-block;
+  position: absolute;
+}
+.ourClients .platforms ul {
+  padding-left: 120px;
+}
+.technicalExp .platforms ul {
+  margin: 0 -7px;
+}
+
+.clearfix:after,
+.row:after {
+  clear: both;
+  display: block;
+}
+.ourClients .platforms ul li {
+  line-height: 50px;
+  width: 16.65%;
+  margin: 0;
+  text-align: center;
+}
+.technicalExp .platforms ul li img {
+  vertical-align: middle;
+  max-width: 100%;
+  height: auto;
+  max-height: inherit;
+}
+.platforms > .row {
+  display: flex;
+  list-style: none;
+  overflow: scroll;
+}
+.platforms.clearfix {
+  padding-left: 30px;
+}
+
+@media only screen and (max-width: 1199px) {
+  .container {
+    // width: 970px;
+  }
+}

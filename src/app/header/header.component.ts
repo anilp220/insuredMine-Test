@@ -17,7 +17,6 @@ export class HeaderComponent implements OnInit {
     this.authListenerSubs = this.authService
       .getAuthStatusListener()
       .subscribe(userObj => {
-        console.log('user obj', userObj)
         this.userIsAuthenticated = userObj.isLoggedIn;
         this.user = userObj.userName;
       });

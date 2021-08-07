@@ -67,7 +67,6 @@ export class AuthService {
 
   checkUserAuth() {
     const user = localStorage.getItem('user');
-    console.log('user', user)
     if (user) {
       this.isAuthenticated = true;
       this.user = user;
